@@ -22,11 +22,11 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-      //   {
-      //     test: /\.(js|jsx)$/,
-      //     use: 'babel-loader',
-      //     exclude: /node_modules/, //不需要去转译"node\_modules"这里面的文件。
-      //   },
+      {
+        test: /\.(js|jsx)$/,
+        use: 'babel-loader',
+        exclude: /node_modules/, //不需要去转译"node\_modules"这里面的文件。
+      },
     ],
   },
   plugins: [
